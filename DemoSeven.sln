@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoSeven.WebApi", "DemoSeven.WebApi\DemoSeven.WebApi.csproj", "{46BEDB49-110F-4581-81E2-08B51F70D7F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unit.Tests", "Unit.Tests\Unit.Tests.csproj", "{6B00570D-8526-41C3-AD90-CA0EA818C1CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46BEDB49-110F-4581-81E2-08B51F70D7F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46BEDB49-110F-4581-81E2-08B51F70D7F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46BEDB49-110F-4581-81E2-08B51F70D7F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46BEDB49-110F-4581-81E2-08B51F70D7F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B00570D-8526-41C3-AD90-CA0EA818C1CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B00570D-8526-41C3-AD90-CA0EA818C1CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B00570D-8526-41C3-AD90-CA0EA818C1CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B00570D-8526-41C3-AD90-CA0EA818C1CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
