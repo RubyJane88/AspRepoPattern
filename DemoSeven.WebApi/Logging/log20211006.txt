@@ -2346,3 +2346,54 @@ System.InvalidOperationException: Unable to resolve service for type 'DemoSeven.
 10/06/2021 22:47:41 +02:00 Server 7efa3224-28ea-444b-a779-b8e7d0b42237 All dispatchers stopped
 10/06/2021 22:47:41 +02:00 Server 7efa3224-28ea-444b-a779-b8e7d0b42237 successfully reported itself as stopped in 0.3505 ms
 10/06/2021 22:47:41 +02:00 Server 7efa3224-28ea-444b-a779-b8e7d0b42237 has been stopped in total 4.1752 ms
+10/06/2021 22:55:19 +02:00 Application Starting
+10/06/2021 22:55:20 +02:00 Starting Hangfire Server using job storage: 'Hangfire.InMemory.InMemoryStorage'
+10/06/2021 22:55:20 +02:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+10/06/2021 22:55:20 +02:00 Server 4128fd8d-2ea3-4762-93fa-57c5d7bfacea successfully announced in 5.496 ms
+10/06/2021 22:55:20 +02:00 Server 4128fd8d-2ea3-4762-93fa-57c5d7bfacea is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, Worker, DelayedJobScheduler, RecurringJobScheduler...
+10/06/2021 22:55:20 +02:00 Server 4128fd8d-2ea3-4762-93fa-57c5d7bfacea all the dispatchers started
+10/06/2021 22:55:21 +02:00 Now listening on: "https://localhost:5001"
+10/06/2021 22:55:21 +02:00 Now listening on: "http://localhost:5000"
+10/06/2021 22:55:21 +02:00 Application started. Press Ctrl+C to shut down.
+10/06/2021 22:55:21 +02:00 Hosting environment: "Development"
+10/06/2021 22:55:21 +02:00 Content root path: "/Users/macbook/Desktop/ASP .Net Core/DemoSeven/DemoSeven.WebApi"
+10/06/2021 22:55:21 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/index.html - -
+10/06/2021 22:55:22 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 228.5381ms
+10/06/2021 22:55:22 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - -
+10/06/2021 22:55:22 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 183.8976ms
+10/06/2021 22:55:30 +02:00 Request starting HTTP/1.1 POST https://localhost:5001/api/Users/auth?version=1.0 application/json 47
+10/06/2021 22:55:30 +02:00 CORS policy execution successful.
+10/06/2021 22:55:30 +02:00 Executing endpoint '"DemoSeven.WebApi.Controllers.V1.UsersController.Authenticate (DemoSeven.WebApi)"'
+10/06/2021 22:55:30 +02:00 Route matched with "{action = \"Authenticate\", controller = \"Users\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(DemoSeven.WebApi.Models.Dtos.AuthenticateRequest)" on controller "DemoSeven.WebApi.Controllers.V1.UsersController" ("DemoSeven.WebApi").
+10/06/2021 22:55:30 +02:00 Executed action "DemoSeven.WebApi.Controllers.V1.UsersController.Authenticate (DemoSeven.WebApi)" in 30.5404ms
+10/06/2021 22:55:30 +02:00 Executed endpoint '"DemoSeven.WebApi.Controllers.V1.UsersController.Authenticate (DemoSeven.WebApi)"'
+10/06/2021 22:55:30 +02:00 An unhandled exception has occurred while executing the request.
+System.NotImplementedException: The method or operation is not implemented.
+   at DemoSeven.WebApi.Services.UserService.Authenticate(AuthenticateRequest model) in /Users/macbook/Desktop/ASP .Net Core/DemoSeven/DemoSeven.WebApi/Services/UserService.cs:line 12
+   at DemoSeven.WebApi.Controllers.V1.UsersController.Authenticate(AuthenticateRequest model) in /Users/macbook/Desktop/ASP .Net Core/DemoSeven/DemoSeven.WebApi/Controllers/V1/UsersController.cs:line 26
+   at lambda_method3(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+10/06/2021 22:55:30 +02:00 Request finished HTTP/1.1 POST https://localhost:5001/api/Users/auth?version=1.0 application/json 47 - 400 - text/html 170.8795ms
+10/06/2021 22:55:39 +02:00 Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast?version=1.0 - -
+10/06/2021 22:55:39 +02:00 Executing endpoint '"DemoSeven.WebApi.Controllers.WeatherForecastController.Get (DemoSeven.WebApi)"'
+10/06/2021 22:55:39 +02:00 Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[DemoSeven.WebApi.WeatherForecast] Get()" on controller "DemoSeven.WebApi.Controllers.WeatherForecastController" ("DemoSeven.WebApi").
+10/06/2021 22:55:39 +02:00 Executing "ObjectResult", writing value of type '"DemoSeven.WebApi.WeatherForecast[]"'.
+10/06/2021 22:55:39 +02:00 Executed action "DemoSeven.WebApi.Controllers.WeatherForecastController.Get (DemoSeven.WebApi)" in 23.2063ms
+10/06/2021 22:55:39 +02:00 Executed endpoint '"DemoSeven.WebApi.Controllers.WeatherForecastController.Get (DemoSeven.WebApi)"'
+10/06/2021 22:55:39 +02:00 Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast?version=1.0 - - - 200 - application/json;+charset=utf-8 27.9864ms
