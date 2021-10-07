@@ -1,7 +1,7 @@
 namespace DemoSeven.WebApi.Helpers
 {
+    //cannot be internal == JWT
     
-    //SEALED??
     public sealed class AuthSettings
     {
         public string Secret { get; set; }

@@ -52,13 +52,16 @@ namespace DemoSeven.WebApi
             
             /* For Open API documentation */
             services.AddSwaggerGenExtension();
-            
-            /* health checks */
-            services.AddHealthChecks();
-            
+
             /* Hangfire is a timer or chron jobs or scheduled jobs */
             services.AddHangfire(x => x.UseInMemoryStorage());
             services.AddHangfireServer();
+            
+            /* auth */
+            services.Configure<AuthSettings>(Configuration.GetSection(nameof(AuthSettings)));
+
+            /* health checks */
+            services.AddHealthChecks();
 
             /* scrutor */
             services.Scan(scan => 
@@ -100,10 +103,9 @@ namespace DemoSeven.WebApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
-            
-            // app.UseAuthorization();
-            
-                      
+            app.UseMiddleware<JwtMiddleware>();
+            app.UseAuthorization();
+
             /* hangfire dashboard */
             app.UseHangfireDashboard("/chron-jobs-dashboard");
             

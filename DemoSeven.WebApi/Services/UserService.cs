@@ -13,18 +13,18 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace DemoSeven.WebApi.Services
 {
-    public sealed class UserService : IUserService
+    public class UserService : IUserService
     {
          private readonly List<User> _users = new()
         {
-            // new User
-            // {
-            //     Id = new Guid("b01e8a73-3b16-4a3b-bb3a-cc6974281447"),
-            //     FirstName = "Devlin",
-            //     LastName = "Duldulao",
-            //     Email = "webmasterdevlin@gmail.com",
-            //     Password = "Pass123!"
-            // },
+            new User
+             {
+                 Id = new Guid("b01e8a73-3b16-4a3b-bb3a-cc6974281447"),
+                FirstName = "Devlin",
+                LastName = "Duldulao",
+                Email = "webmasterdevlin@gmail.com",
+                Password = "Pass123!"
+             },
             
             new User
             {
@@ -33,7 +33,17 @@ namespace DemoSeven.WebApi.Services
                 LastName = "Bee",
                 Email = "arjaycee_8@yahoo.com",
                 Password = "Pass123!"
-            }
+            },
+            new User
+            {
+                Id = new Guid("b01e8a73-3b16-4a3b-bb3a-cc6974281449"),
+                FirstName = "Kairo",
+                LastName = "Juan",
+                Email = "kairo@yahoo.com",
+                Password = "Pass123!"
+            },
+            
+            
         };
 
         private readonly AuthSettings _authSettings;

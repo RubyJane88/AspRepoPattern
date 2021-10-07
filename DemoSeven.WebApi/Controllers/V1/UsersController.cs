@@ -1,9 +1,8 @@
 using DemoSeven.WebApi.Contracts;
 using DemoSeven.WebApi.Models.Dtos;
-using DemoSeven.WebApi.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.VisualStudio.Web.CodeGeneration.Contracts.Messaging;
+
 
 namespace DemoSeven.WebApi.Controllers.V1
 {
@@ -11,7 +10,7 @@ namespace DemoSeven.WebApi.Controllers.V1
     [AllowAnonymous]
     [ApiController]
     [Route("api/[controller]")]
-    public sealed class UsersController : ControllerBase
+    public class UsersController : ControllerBase
     {
         private readonly IUserService _userService;
 

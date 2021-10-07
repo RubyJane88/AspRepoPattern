@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace DemoSeven.WebApi.Helpers
 {
+    //Can be INTERNAL SEALED 
+    /* Custom annotation/attribute */
+    
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     internal sealed class AuthorizeAttribute : Attribute, IAuthorizationFilter
     {

@@ -1,9 +1,9 @@
-using Microsoft.AspNetCore.Authorization;
+using DemoSeven.WebApi.Helpers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DemoSeven.WebApi.Controllers.Base
 {
-    // [Authorize]
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public abstract class ApiController : ControllerBase

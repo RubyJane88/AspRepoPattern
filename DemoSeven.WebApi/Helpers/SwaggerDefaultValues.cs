@@ -6,8 +6,8 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace DemoSeven.WebApi.Helpers
 {
-
-  internal sealed class SwaggerDefaultValues : IOperationFilter
+//Can be Internal Sealed 
+ internal sealed class SwaggerDefaultValues : IOperationFilter
     {
         public void Apply(OpenApiOperation operation, OperationFilterContext context)
         {

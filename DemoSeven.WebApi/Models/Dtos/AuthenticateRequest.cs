@@ -2,7 +2,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DemoSeven.WebApi.Models.Dtos
 {
-    public sealed class AuthenticateRequest
+
+    public class AuthenticateRequest
     {
         [Required] 
         public string Email { get; set; }

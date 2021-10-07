@@ -4,19 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DemoSeven.WebApi.Contracts;
-using DemoSeven.WebApi.Services;
+
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
 namespace DemoSeven.WebApi.Helpers
 {
-    //SEALED??
-    public sealed class JwtMiddleWare
-    {
-        /* Custom middleware model */
+
+    //Can be INTERNAL SEALED
+    /* Custom middleware model */
     
-        public class JwtMiddleware
+        internal sealed class JwtMiddleware
         {
             private readonly RequestDelegate _next;
             private readonly AuthSettings _authSettings;
@@ -63,4 +62,3 @@ namespace DemoSeven.WebApi.Helpers
             }
         }
     }
-}

@@ -3,7 +3,7 @@ using DemoSeven.WebApi.Models.Entities;
 
 namespace DemoSeven.WebApi.Models.Dtos
 {
-    public sealed class AuthenticateResponse
+    public class AuthenticateResponse
     {
         public Guid Id { get; set; }
         public string FirstName { get; set; }
