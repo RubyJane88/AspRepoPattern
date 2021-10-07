@@ -8,7 +8,7 @@ namespace DemoSeven.WebApi.Controllers.V1._1
 {
    
         [ApiVersion("1.1")]
-        public class JobController : ApiController
+        public sealed class JobController : ApiController
         {
             private readonly IJobService _jobService;
             private readonly IBackgroundJobClient _backgroundJobClient;

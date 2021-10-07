@@ -16,7 +16,7 @@ namespace DemoSeven.WebApi.Controllers.V2
     /* using redis */
     
     [ApiVersion("2.0")]
-    public class CustomersController : ApiController
+    public sealed class CustomersController : ApiController
     {
         private readonly ApplicationDbContext _context;
         private readonly IDistributedCache _distributedCache;
