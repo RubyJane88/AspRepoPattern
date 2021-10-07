@@ -13,7 +13,8 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace DemoSeven.WebApi.Services
 {
-    public class UserService : IUserService
+    //Cannot be INTERNAL
+    public sealed class UserService : IUserService
     {
          private readonly List<User> _users = new()
         {

@@ -40,6 +40,12 @@ namespace DemoSeven.WebApi
             var connectionString = Configuration["MSSQLServer:ConnectionString"];
             services.AddDbContext<ApplicationDbContext>(opt => opt.UseSqlServer(connectionString));
             
+            /* Redis Cache */
+            services.AddStackExchangeRedisCache(options =>
+            {
+                options.Configuration = Configuration["RedisServer:ConnectionString"];
+            });
+            
             /* AutoMapper for mapping Entities to Dtos */
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             

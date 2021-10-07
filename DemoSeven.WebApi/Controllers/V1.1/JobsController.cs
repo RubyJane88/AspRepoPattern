@@ -6,8 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DemoSeven.WebApi.Controllers.V1._1
 {
-    public sealed class JobsController : ApiController
-    {
+   
         [ApiVersion("1.1")]
         public class JobController : ApiController
         {
@@ -54,4 +53,4 @@ namespace DemoSeven.WebApi.Controllers.V1._1
             }
         }
     }
-}
+

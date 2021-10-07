@@ -47,6 +47,43 @@ namespace DemoSeven.WebApi.Migrations
                     b.ToTable("Books");
                 });
 
+            modelBuilder.Entity("DemoSeven.WebApi.Models.Entities.Customer", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DateOfBirth")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(54)
+                        .HasColumnType("nvarchar(54)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(54)
+                        .HasColumnType("nvarchar(54)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasMaxLength(54)
+                        .HasColumnType("nvarchar(54)");
+
+                    b.Property<string>("Mobile")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Customers");
+                });
+
             modelBuilder.Entity("DemoSeven.WebApi.Models.Entities.Todo", b =>
                 {
                     b.Property<Guid>("Id")

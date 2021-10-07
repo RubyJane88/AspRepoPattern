@@ -269,3 +269,4 @@
 /Users/macbook/Desktop/ASP .Net Core/DemoSeven/Unit.Tests/obj/Debug/net5.0/Unit.Tests.pdb
 /Users/macbook/Desktop/ASP .Net Core/DemoSeven/Unit.Tests/obj/Debug/net5.0/Unit.Tests.genruntimeconfig.cache
 /Users/macbook/Desktop/ASP .Net Core/DemoSeven/Unit.Tests/bin/Debug/net5.0/Logging/log20211006.json
+/Users/macbook/Desktop/ASP .Net Core/DemoSeven/Unit.Tests/bin/Debug/net5.0/Logging/log20211007.json

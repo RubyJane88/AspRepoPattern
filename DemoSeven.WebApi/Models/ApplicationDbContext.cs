@@ -9,6 +9,8 @@ namespace DemoSeven.WebApi.Models
         public DbSet<Book> Books { get; set; }
         
         public DbSet<User> Users { get; set; }
+        
+        public DbSet<Customer> Customers { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {

@@ -15,7 +15,7 @@ namespace DemoSeven.WebApi.Helpers
     //Can be INTERNAL SEALED
     /* Custom middleware model */
     
-        internal sealed class JwtMiddleware
+        public class JwtMiddleware
         {
             private readonly RequestDelegate _next;
             private readonly AuthSettings _authSettings;
