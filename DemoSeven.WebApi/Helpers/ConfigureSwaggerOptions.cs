@@ -7,7 +7,7 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace DemoSeven.WebApi.Helpers
 {
-    //Can be INTERNAL SEALED 
+    //this can be INTERNAL SEALED 
     public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>
     {
         private readonly IApiVersionDescriptionProvider _provider;
